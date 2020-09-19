@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(129, 125, 125);
+}
+
+hr {
+    width: 60%;
+    border-top: 1px dotted #DDD;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin: auto;
+}
+
+
+header {
+    width: auto;
+    padding: 40px;
+    background-color:#8cd3d6;
+}
+
+footer {
+    padding: 1.5em 2em;
+    background-color:#8cd3d6;
+    text-align: center;
+}
+
+footer p, footer a, footer div {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+img {
+    width: 30%;
+    float: right;
+    margin-top: -100px;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+
+main {
+    min-height: auto;
+    padding: 1.5em 2em;
+    background-color: #ffff;
+}
+
+
+@media screen and (max-width: 750px) {
+    h1 {
+     text-align: center;
+    }
+    .container {
+      max-width: 90%;
+      background-color: #FFF9F9;
+      margin: auto;
+    }
+    img{
+        width: 50%;
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+      }
+}
