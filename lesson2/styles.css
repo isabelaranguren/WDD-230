@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,200,300,500,700,900);
+
+* {
+  box-sizing: border-box;
+}
+  .title {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+h1{
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#EFF1F6;
+    margin: 0;
+    font-size: 15px;
+    color: #3E4F48;
+    font-weight: 200;
+}
+
+h1 {
+    margin: 0;
+    margin-left: 20px;
+    color: #8cd3d6;
+    font-weight: 500;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:#f00;
+    border-bottom: 1px solid #F00;
+}
+div #logo-container {
+    width: 100px;
+}
+
+nav {
+  width: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fff;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  div#logo-container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column
+  }
+  nav a {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+footer {
+    padding: 1.5em 2em;
+    background-color:#8cd3d6;
+    text-align: center;
+    
+}
+
+footer p, footer a, footer div {
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+main {
+    color:#3E4F48;
+    padding: 1vh 5vw;
+    height: 100%;
+    font-size: 1em;
+ }
+
+.picture {
+    text-align: center;
+    padding: 1vh 0vw;
+    color: black;
+  }
+  
+.picture img {
+    width: 250px;
+    height: auto;
+  }
+  
+@media screen and (min-width:750px) {
+    .container {
+      columns: 2 30vw;
+      column-gap: 5em;
+}
+    .box {
+      display: grid;
+      border-radius: 2.5em;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    } .title {
+      grid-row: 2;
+    }
+    .picture {
+      display: flex;
+      flex-direction: column;
+      grid-row: 1;
+      font-size: .75em;
+    }
+  
+    .picture img {
+      width: 30vw;
+      height: auto;
+      margin: 0px 0px;
+    }
+  figcaption {
+    padding: 1em 0em;
+  }
+    .description {
+      grid-row: 3;
+      line-height: 1.5em;
+    }
+  }
+  
+
+
+
+
+
+
+  /* Large View */
+  @media screen and (min-width:1050px) {
+    .container {
+      column-fill: auto;
+      columns: 3 20vw;
+      column-gap: 40px;
+      margin: 3vh 0vw;
+    }
+  
+    .picture img {
+      height: auto;
+      width: 20vw;
+    }
+  }
