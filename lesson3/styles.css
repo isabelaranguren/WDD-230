@@ -47,6 +47,7 @@ footer {
 	margin: 0 auto;
 }
 h1 {
+    text-shadow: 1px 1px #26292b62;
     color: #fffF;
 	font-size: 2rem;
 }
@@ -155,10 +156,6 @@ table.blueTable {
 @media only screen and (min-width: 37.5em) {
 		nav ul { display: flex; }
         nav ul li { flex: 1 1 100%; }
-
-	
-
-
 	
 			nav li {display: inline-block;}
 	
@@ -184,6 +181,10 @@ table.blueTable {
 		height: auto;
 		border: 1px solid #bbb;
 	}
+}
+
+.logo img  {
+    height: 50%;
 }
 
 /* Desktop Views ****************************/
