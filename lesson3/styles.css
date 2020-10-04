@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+
+body {
+	font-size: 16px;
+    font-family: "Jost", sans-serif;
+    background-color: #e1e8ed;
+    color:#353E46;
+}
+
+/* phone or baseline views **************************/
+
+
+footer {
+    background-color:#536878;
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+
+
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+ header {
+    background-color: #50B2C0;
+ }
+
+header,
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 780px;
+	margin: 0 auto;
+}
+h1 {
+    color: #fffF;
+	font-size: 2rem;
+}
+h2 {
+    font-size: 1.8rem;
+	color:#353E46;
+}
+
+nav {
+	background-color:#353E46;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+	font-size: 0.9rem;
+}
+main article {
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+    border: 2px;
+    margin: 0.5rem;
+	padding: 0.5rem 2.5rem;
+	background-color: #f5f8fa;
+}
+main picture {
+	display: none;
+	margin: 0.5rem;
+}
+
+footer {
+	flex: 0 1 100%;
+	height: 2rem;
+}
+
+table.blueTable {
+    border: 1px solid #50B2C0;
+    background-color: #e1e8ed;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 10px 15px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.blueTable thead {
+      border-bottom: 2px solid #444444;
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #536878;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.blueTable tfoot {
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    border-top: 2px solid #444444;
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  
+
+
+
+@media only screen and (min-width: 37.5em) {
+		nav ul { display: flex; }
+        nav ul li { flex: 1 1 100%; }
+
+	
+
+
+	
+			nav li {display: inline-block;}
+	
+			nav li {float:left; margin-right:15px;}
+			main {clear:both;}
+	
+
+	
+	nav a {
+		font-size: 1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 2;
+	}
+	main picture {
+		display: block;
+	}
+	main picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 1;
+	}
+}
