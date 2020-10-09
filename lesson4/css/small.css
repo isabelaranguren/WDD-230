@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+
+body {
+	margin: 0px auto;
+	padding: 0;
+	font-size: 15px;
+    font-family: "Jost", sans-serif;
+    background-color: #e1e8ed;
+    color:#353E46;
+}
+
+header {
+    margin: 0px auto;
+	background-color: #50b2c0;
+	display: flex;
+    padding: 15px 0px;
+    align-items: center;
+	justify-content: center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+
+.headings h1 {
+    text-shadow: 1px 1px 2px #0000002f;
+    color: white;
+    text-transform: uppercase;
+	font-size: 1.9rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+    color: black;
+	margin-left: 20px;
+	font-size: .8rem;
+}
+
+nav {
+    background-color:#353E46;
+    text-align: center;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color:#ffff;
+    text-align: center;
+    padding: 0.95rem;
+    text-decoration: none;
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.ham {
+    align-content: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none
+}
+
+.navigation a {
+    display: block;
+    padding: 0.95rem;
+}
+
+.navigation a:visited {
+    color: rgb(238, 238, 238)
+
+}
+
+.responsive li {
+    display: block;
+}
+
+
+.box {
+    box-shadow: 1px 1px 2px #0000002f;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    color: #333;
+}
+
+.box {
+    background-color:#ffff;
+    margin-bottom: .7em;
+}
+
+
+
+main {
+    font-size: 0.9rem;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #353E46;
+    padding: 10px;
+    text-align: center;
+    color:#ffff;
+    font-weight: 300;
+    margin: 0 auto;
+}

@@ -1,0 +1,53 @@
+/* Larger viewports */
+@media only screen and (min-width: 768px) {
+
+header {
+    padding: 25px 0px;
+
+}
+header img {
+		width: 80%;
+	}
+
+.headings h1 {
+		font-size: 2.3rem;
+}
+
+.m {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
+nav a {
+    font-size: 1rem;
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 auto;
+}
+
+footer, main {
+    width: 70%;
+}
+
+
+
+}
