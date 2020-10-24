@@ -1,0 +1,253 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap'); */
+
+.banner {
+    margin: auto;
+    text-align: center;
+    padding: 5.5px;
+    line-height: 0.9rem;
+    background-color: #ffd166;
+    color: black;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0;
+	font-size: 15px;
+    font-family: "Jost", sans-serif;
+    background-color: #ffffff;
+    color:#353E46;
+}
+
+header {
+    margin: 0px auto;
+	background-color: #50b2c0;
+	display: flex;
+    padding: 15px 0px;
+    align-items: center;
+	justify-content: center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.hero img {
+    width: 50%;
+}
+
+.favicon {
+    align-items: center;
+    width: 50%;
+}
+
+.headings h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+    color: black;
+	margin-left: 10px;
+	font-size: .8rem;
+}
+
+nav {
+    background-color:#353E46;
+    text-align: center;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color:#ffff;
+    text-align: center;
+    padding: 0.95rem;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color:#657685;
+}
+
+
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.ham {
+    align-content: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none
+}
+
+.navigation a {
+    display: block;
+    padding: 0.95rem;
+}
+
+.navigation a:visited {
+    color: rgb(238, 238, 238)
+
+}
+
+.responsive li {
+    display: block;
+}
+.box {
+    background-color:#ffff;
+    margin-bottom: .7em;
+}
+
+main {
+    font-size: 0.9rem;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    background-color: #353E46;
+    padding: 10px;
+    text-align: center;
+    color:#ffff;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.hero_box {
+    margin: 10px auto;
+    position: relative;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.weather_summary {
+    margin-top: -225px;
+    margin-left: 25px;
+    position: absolute;
+    text-align: left;
+    line-height: 0.5rem;
+    background:#ffd166;
+    color: #000000;
+    padding: 1.5rem;
+    box-shadow: 0 0 1px #111;
+    opacity: .8;
+}
+
+
+table.forecast {
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid #1C6EA4;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+  }
+  table.forecast td, table.forecast th {
+    border: 1px solid #AAAAAA;
+    padding: 10px 5px;
+  }
+  table.forecast tbody td {
+    font-size: 16px;
+    text-align: center;
+  }
+  table.forecast thead {
+      background-color: #ffd166;
+    }
+  table.forecast thead th {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+.article_box {
+    background-color: #eeebeb;
+    color: #353E46;
+    max-width: 960px;
+    margin: 1.2em auto 0;
+    overflow: hidden;
+}
+
+.article_content {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+a.article_content a {
+    color: #ffffff;
+}
+
+
+.articleImg {
+    max-width: 100%;
+}
+
+
+.flex-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 1220px;
+    margin-top: 10px;
+    margin-bottom: 0em;
+}
+
+.contactspan {
+    padding-left: 10px;
+    text-align: center;
+    float: right;
+}
+
+.flex-item {
+    background-color: #c9d2db;
+    margin: 3px;
+    padding: 10px 0 0 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.map {
+    width: 300px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
