@@ -1,1 +1,24 @@
 
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dadada;
+    text-align: center;
+  }
+
+
+img[data-src] {
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+    -webkit-transition: filter 1.5s;
+    -moz-transition: filter 1.5s;
+    -ms-transition: filter 1.5s;
+    -o-transition: filter 1.5s;
+    -webkit-filter: blur(0em);
+}
