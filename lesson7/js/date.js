@@ -1,7 +1,8 @@
 function main() {
-    getDate()
+    getDate();
     displayBanner();
-    getSummary();
+    getWindChill();
+
 }
 
 function getDate() {
@@ -24,19 +25,3 @@ function displayBanner(){
     document.documentElement.scrollTop = 0;
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min; //The maximum is inclusive and the minimum is inclusive 
-}
-
-function getSummary(){
-    let currTemp = getRandomInt(25,90);
-    let windSpeed = getRandomInt(1,12);
-    let windChill;
-    if (currTemp <= 50 && windSpeed > 3.0){
-        windChill = windChill(currTemp, windSpeed);
-    }
-
-    document.getElementById('currTemp').innerHTML = `${currTemp}&#8457;`
-    document.getElementById('windSpeed').innerHTML = `${windSpeed} MPH`
-    document.getElementById('windChill').innerHTML = `${windChill}`
-}
