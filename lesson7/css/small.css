@@ -297,7 +297,7 @@ img {
   }
   
   .gallery figcaption {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.054), 0 6px 20px 0 rgba(0, 0, 0, 0.041);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.054);
     padding-bottom: 10px;
     font-size: 1em;
     color: #05386B;
