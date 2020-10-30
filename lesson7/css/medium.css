@@ -13,4 +13,8 @@
         padding: 1.5rem;
         opacity: .8;
     }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
 }

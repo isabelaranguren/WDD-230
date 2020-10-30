@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="weatherIcon.ico">
     <title> WDD 230: Assignment Portal Isabel Aranguren</title>
 </head>
 <body onload="main()">
@@ -28,14 +28,13 @@
     </header>
     <nav>
         <ul class="navigation">
-        <li><a class="ham" href="#">&#9776;</a></li>
-          <li><a href="#">Home</a></li>
-          <li class="active"><a class="nav-link" href="preston-6.html">Preston</a></li>
-
+          <li><a class="ham" href="#">&#9776;</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a class="nav-link" href="/preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -47,6 +46,7 @@
             <source media="(min-width: 1024px)" srcset="./images/default.jpg">
             <source media="(min-width: 768px)" srcset="./images/default-small.jpg">
             <img class="hero" src="./images/default-small.jpg" alt="Rainy Day">
+        </picture>
         <section class="weather_summary">
             <h3>Weather Summary</h3>
             <p>Temperature: <span id="currTemp">87</span>℉</p>
@@ -54,7 +54,6 @@
             <p>Wind Chill: <span id="windChill">N/A</span></p>
             <p>Precipitation: <span>61</span>%</p>
             <p>Traffic: Mild. Average delay of 20 - 30 minutes.</p>
-        </picture>
       </section>
     </div>
     <section>
@@ -72,16 +71,16 @@
             <tbody>
         <tr>
             <td>
-                <img class="favicon" src="images/Sonne.png" alt="Sunny">
+                <img class="weatherIcon" src="images/Sonne.png" alt="Sunny">
             </td>
             <td>
-                <img class="favicon" src="images/Sonne.png" alt="Sunny">
+                <img class="weatherIcon" src="images/Sonne.png" alt="Sunny">
             </td>
-            <td><img class="favicon" src="images/windy.png" alt="Windy">
+            <td><img class="weatherIcon" src="images/windy.png" alt="Windy">
             </td>
-            <td><img class="favicon" src="images/windy.png" alt="Windy">
+            <td><img class="weatherIcon" src="images/windy.png" alt="Windy">
             </td>
-            <td><img class="favicon" src="images/sturmich.png" alt="Storm">
+            <td><img class="weatherIcon" src="images/sturmich.png" alt="Storm">
             </td>
         </tr>
             </tbody>
