@@ -261,7 +261,7 @@ img[data-src] {
   
 img {
     filter: blur(0em);
-    transition: filter 1.5s;
+    transition: filter 0.5s;
     -webkit-transition: filter 1.5s;
     -moz-transition: filter 1.5s;
     -ms-transition: filter 1.5s;
