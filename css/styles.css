@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+
+body {
+    margin: 0 auto;
+    background-color: #FFFFFF;
+  }
+  
+  caption {
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 8px;
+    box-shadow: 8px 8px 12px #5e9097;  
+  }
+  
+  header {
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 0;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  tfoot tr td {
+    background-color: #7fb9c2;
+    text-align: center;
+    font-size: .7em;
+    font-weight: 300;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: #628CA6;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    border: solid 1.5px #cdcdcd;
+  }
+  
+  td {
+    border: solid 1.5px #cdcdcd;
+    padding: 5px;
+  }
+  
+  tr:nth-child(odd) {
+    background: #E7F0ED;
+  }
+  
+  tr:nth-child(even) {
+    background: #E7FFED;
+  }
+  
+  tr:nth-child(4) td:nth-child(3) {
+    background-color: #628CA6;
+    color: white;
+  }
+  tr:nth-child(5) td:nth-child(1) {
+    font-style: italic;
+  }
+  
+  #Sales {
+    font-family: Ubuntu, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 1px #cdcdcd;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 12px #6F96AD;
+  }
+  

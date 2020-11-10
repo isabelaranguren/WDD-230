@@ -1,38 +1,54 @@
-<!doctype html>
-<html lang="en-us">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="WDD 230: Assignment Portal">
-  <meta name="description" content="Assignment portal for Isabel Aranguren in 
-  WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-  <link rel="stylesheet" href="styles.css">
-  <title> WDD 230: Assignment Portal Isabel Aranguren</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Principles in 
+    WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> WDD 230: Assignment Portal Isabel Aranguren</title>
 </head>
-<body>
-    <div class="container">
+<body onload="main()">
+    <div id="banner" class="hidden banner">
+        <h2>Saturday = Preston Pancakes in the Park!</h2>
+        <p>9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
     <header>
-        <h1>Isabel Aranguren</h1>
-        <img src="assets/me_50.jpg" alt="Portrait image of Isabel">
+        <picture>
+            <img src="img/icon2.png" alt="The world logo">
+        </picture>
+        <section class="headings">
+            <h1>Weather Lot</h1>
+            <div class="m">Lorem ipsum dolor sit amet consectetur.</div>
+        </section>
     </header>
-    <main>
-        <h2>WDD 230: Assignment Portal</h2>
-        <hr>
-         <ul>
-            <li>Lesson 02 <a href=../lesson2/design-principles.html>Assignment Link</a></li>
-            <li>Lesson 03 <a href=../lesson3/index.html>Assignment Link</a></li>
-            <li>Lesson 04 <a href=../lesson4/preston-4.html>Link</a> </li>
-            <li>Lesson 05 <a href=../lesson5/preston-5.html>Link</a> </li>
-            <li>Lesson 06 <a href=../lesson6/preston-6.html>Link</a></li>
-            <li>Lesson 07 <a href=../lesson7/lazyload.html>Lazy Loading</a>|<a href=../lesson7/gallery-7.html>Gallery</a> </li>
-            <li>Lesson 08 <a href=../lesson8/tablebuild.html>Table</a>|<a href=../lesson8/stormcenter.html>Storm</a></li>
-
+    <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">&#9776;</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
-    </main>
-    <footer>
-        <p>&copy;2020 | Isabel Aranguren | Houston| <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
-        <div id="lastUpdated"></div>
-    </footer>
-</div>
-<script src="js/lastUpdated.js"></script>
+    </nav>
+  <main>
+  </main>
+ <footer>
+    <p>&copy; <span id="year"></span>Weather Lot | Attributions | Isabel Aranguren<br>
+    <span id="currentDate"></span></p>
+    <div id="box1">
+    </div> 
+</footer>
+<script src="js/webfontload.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
