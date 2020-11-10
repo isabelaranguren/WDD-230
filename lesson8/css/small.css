@@ -50,7 +50,7 @@ footer {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -304,3 +304,85 @@ img {
     padding-top: 10px;
     text-align: center;
   }
+
+
+#stormcenter {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+#stormcenter .formfield label {
+  display:flex;
+  flex-direction: column;
+}
+#stormcenter .formfield .dangerlevel {
+  flex-direction: row;
+}
+  
+#stormcenter .formfield .dangerlevel .optionvalue {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+  
+#stormcenter input {
+  height:30px;
+  border: 1px solid rgba(85, 85, 85, 0.288);
+} 
+#stormcenter input:required:invalid {
+  border-left: 6px solid rgba(255, 0, 0, 0.568);
+}
+
+#stormcenter input:required:valid {
+    border-left: 6px solid green;
+  }
+  #stormcenter input[type=radio] {
+    display: block;
+  }
+  
+  #stormcenter #comments {
+    height: 80px;
+  }
+  
+  #stormcenter label {
+      margin-left: 20px;
+      text-align: left;
+      padding: 15px 0px 0px;
+  }
+
+  #stormcenter .formfield {
+    margin-top: 10px;
+  }
+  
+#stormcenter #submit {
+  margin-top: 20px;
+  width:80%;
+  border-radius: 20px;
+  max-width: 25rem;
+  background-color:  #ffd166;
+  font-size: 20px;
+  height: 45px;
+  border: none;
+  color: black;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+  
+
+#stormcenter fieldset{
+  border: 1px solid rgba(85, 85, 85, 0.288);
+  padding: 0 2em 1em 1em;
+  border-radius: 5px;
+}
+  
+#stormcenter legend {
+  text-align: left;
+  font-weight: 400;
+  color: #353E46;
+  font-size: 1.4em;
+  padding: 0.75em;
+}
+
