@@ -1,0 +1,77 @@
+body {
+ font-family: "Jost", sans-serif;
+ color:#353E46;
+ margin:0 auto;
+
+}
+
+h1, h2 {
+ text-align: center;
+ color: #353E46;
+ font-weight: 700;
+
+}
+  
+.cards {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 5px; 
+}
+
+img {
+  display: block;
+  width: 55%;
+  margin: 5px auto 0 auto;
+  box-shadow: 0px 0px 10px 5px #e9e9e92c;
+}
+  
+main {
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #dddddd;
+  box-shadow: 0px 0px 10px 5px #97979744;
+}
+  
+section {
+  background-color: #2041af4d;
+  border: solid 2px rgb(29, 82, 143);
+  padding-bottom: 12px;
+}
+  
+.birth, .birthplace {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+
+footer {
+  background-color: #353E46;
+  padding: 10px;
+  text-align: center;
+  color:#ffff;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+  
+@media only screen and (min-width: 32.5em) { 
+    .cards {
+       grid-template-columns: 1fr 1fr;
+    }
+    img {
+       width: 75%;
+    }
+  }
+
+@media only screen and (min-width: 60em) { 
+  .cards {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+  footer {
+    width: 70%;
+}
+  img {
+    width: 85%;
+    }
+  }
