@@ -43,3 +43,4 @@ function getParameterByName(name, url) {
 function updateSeverity(val) {
   document.getElementById('severitydisplay').innerHTML = "Severity: " + val; 
 }
+
