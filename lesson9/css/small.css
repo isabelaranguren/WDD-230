@@ -4,19 +4,20 @@ body {
 	margin: 0px auto;
 	padding: 0;
 	font-size: 15px;
-  font-family: "Jost", sans-serif;
-  background-color: #ffffff;
-  color:#353E46;
+    font-family: "Jost", sans-serif;
+    background-color: #ffffff;
+    color:#353E46;
 }
 
 header {
-  margin: 0px auto;
+    margin: 0px auto;
 	background-color: #50b2c0;
 	display: flex;
-  padding: 15px 0px;
-  align-items: center;
+    padding: 15px 0px;
+    align-items: center;
 	justify-content: center;
 }
+
 
 header img {
 	width: 80px;
@@ -24,10 +25,10 @@ header img {
 }
 
 main {
-  font-size: 0.9rem;
-  padding: 15px;
-  margin: 0 auto;
-  text-align: center;
+    font-size: 0.9rem;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 footer {
@@ -383,5 +384,41 @@ img {
   color: #353E46;
   font-size: 1.4em;
   padding: 0.75em;
+}
+
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.cards section {
+  box-shadow: -4px 0px 15px 1px rgba(76, 76, 76, 0);
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #d7e8eb;
+}
+
+
+
+.cards section img {
+  padding-top: 20px;
+  border-radius: 18px;
+  width: 80%;
+  height: auto;
+  padding: 5px;
+  filter: blur(0em);
+  transition: filter 1s;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
+.cards section:hover {
+  background-color: #a6bcc0;
+
 }
 
