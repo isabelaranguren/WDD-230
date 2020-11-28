@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;400;500;600&display=swap');
+//Variables
+$bar-width: 50px;
+$bar-height: 7px;
+$icon-bg: #fcfcfc;
+$close: #c92c00;
+$primaryFont: 'Jost', Sans Serif;
+//colors
+$body-color: #000000;
+$header-bg: #fdfdfd;
+$shade: rgba(190, 184, 184, 0.8);
+$hover: #23f;
+
+//breakpoints
+$breakpoint: 32em;
+
+//mixins
+@mixin MQ($size) {
+  @if $size == S {
+   @media only screen and (max-width: $breakpoint) { @content; }
+  }
+  @else if $size == M {
+   @media only screen and (min-width: $breakpoint) { @content; }
+  }
+}
+
+body {
+  font-family: $primaryFont;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: $header-bg;
+  color: white;
+  box-shadow:rgba(0,0,0,0.8);
+}
+
+.menu-icon {
+  width: $bar-width;
+  height: $bar-width;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $icon-bg;
+    width: $bar-width;
+    height: $bar-height;
+    top: -($bar-height)-5;
+    border-radius: 1em;
+    transition: 0.75s;
+    transform-origin: bottom right;
+  }
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  margin: 0 auto;
+  width: $bar-width;
+  height: $bar-height;
+  background-color: $icon-bg;
+  border-radius: 1em;
+  transition: 0.2s;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $icon-bg;
+    width: $bar-width;
+    height: $bar-height;
+    top: ($bar-height)+5;
+    border-radius: 1em;
+    transition: .75s;
+    transform-origin: bottom right;
+  }
+}
+
+.icon-animation {
+  background-color: transparent;
+  &:before {
+    transform: translate(-5px, -12px) rotate(-45deg);
+    background-color: $close;
+  }
+  &:after {
+    transform: translateX(-10px) rotate(45deg);
+    background-color: $close;
+  }
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  //This makes sure that the menu is off screen.
+  left: -120%;
+  background-color: $shade;
+  height: 100vh;
+  padding: 1em 0;
+  transition: .75s ease-out;
+  @include MQ(M){
+    width: 40vw;
+  }
+  @include MQ(S){
+    width: 100vw;
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    li:hover{
+      background-color: $shade;
+    }
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bolder;
+    color: $body-color;
+    padding: 1em;
+  }
+  a:hover{
+    color: $hover;
+  }
+}
+.slide-in {
+  left: 0;
+}
+
+main{
+  padding: 0 1.5em;
+}
+
