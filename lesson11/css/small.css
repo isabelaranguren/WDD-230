@@ -1,13 +1,18 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap'); */
 
 body {
-	margin: 0px auto;
-	padding: 0;
-	font-size: 15px;
+    margin: 0px auto;
+    padding: 0;
+    font-size: 15px;
     font-family: "Jost", sans-serif;
     background-color: #ffffff;
     color:#353E46;
 }
+
+a {
+   color: white;
+}
+
 
 header {
     margin: 0px auto;
