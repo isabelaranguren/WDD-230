@@ -42,7 +42,12 @@
         <h2>Welcome</h2>
     </div>
     <div class="hero_box">
-        <img class="hero" src="img/hero.jpg" alt="Clouds">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="./img/home-default.jpg">
+            <source media="(min-width: 768px)" srcset="./img/home-med.jpg">
+            <source media="(min-width: 658px)" srcset="./img/home-small.jpg">
+            <img class="hero" src="./img/home-small.jpg" alt="Home hero">
+          </picture>
     </div>
         <div class="cards"></div>
     </section>
