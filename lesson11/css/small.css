@@ -101,6 +101,8 @@ nav ul li a {
 }
 
 
+
+
 nav ul li a:hover {
     background-color:#657685;
 }
@@ -180,30 +182,6 @@ nav ul li a:active{
     opacity: .8;
 }
 
-table.forecast {
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px solid #1C6EA4;
-    width: 80%;
-    justify-content: center;
-    text-align: center;
-  }
-  table.forecast td, table.forecast th {
-    border: 1px solid #AAAAAA;
-    padding: 10px 5px;
-  }
-  table.forecast tbody td {
-    font-size: 16px;
-    text-align: center;
-  }
-  table.forecast thead {
-      background-color: #ffd166;
-    }
-  table.forecast thead th {
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-  }
   
 .article_box {
     background-color: #eeebeb;
@@ -425,4 +403,14 @@ img {
 
 #forecast {
   display: none;
+}
+
+#events p {
+  padding: 20px;
+  background-color:  #d6e3e6;
+}
+
+#events p:hover {
+  padding: 20px;
+  background-color:  #c7cfd1;
 }

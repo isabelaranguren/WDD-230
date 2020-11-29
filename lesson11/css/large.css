@@ -115,18 +115,21 @@ footer, main {
     width: 325px;
   }
 
+
   #forecast {
     display: grid;
-    gap: 5px;
+    gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
  }
  #forecast h3 {
     grid-column: 1 /6;
  }
- .forecast {
-    padding-bottom: 30px;
+ #forecast .forecast {
+    padding-top: 30px;
 
-    border: solid thin black;
+    color: black;
+    padding-bottom: 30px;
+    background-color: #d8e9f5;
  }
  .forecast div {
     text-align: center;
