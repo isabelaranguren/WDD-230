@@ -117,7 +117,7 @@ if('IntersectionObserver' in window) {
 }
 
 function getSummary(id) {
-  const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=" + id + "&units=imperial&APPID=8ad3323b6bd5bd5cba6cbb7707444f1c";
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + id + "&units=imperial&APPID=8ad3323b6bd5bd5cba6cbb7707444f1c";
   fetch(apiURL)
     .then((response) => response.json())
           //console.log(JSON.stringify(jsObject));
@@ -160,7 +160,7 @@ function updateSeverity(val) {
 
 /* 5 day forecast */
 function getForecast(id) {
-  const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=8ad3323b6bd5bd5cba6cbb7707444f1c";
+  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=8ad3323b6bd5bd5cba6cbb7707444f1c";
   fetch(apiURL)
   .then(response => response.json())
   .then((jsObject) => {
