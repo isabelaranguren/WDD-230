@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Whether you need a scooter for a day, week, month or a year, Scoots has you covered!">
-      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/large.css">
-      <link rel="stylesheet" href="css/med.css">
+      <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="shortcut icon" href="assets/favicon.ico">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -14,7 +15,7 @@
    </head>
    <body onload="main()">
       <div id="banner" class="banner">
-         <div id="alerts">NA</div>
+         <div id="alerts">SCOOTS</div>
      </div>
       <div class="weatherInfo">
          <div id="temp"></div>
@@ -25,21 +26,80 @@
         <ul class="navigation">
         <li><a class="ham" href="#">&#9776;</a></li>
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="rentals.html">Rentals</a></li>
+          <li><a class="nav-link active" href="rentals.html">Rentals</a></li>
           <li><a class="nav-link" href="tours.html">Tours</a></li>
-          <li><a class="nav-link" href="reservation.html">Reservations</a></li>
-          <li><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          <li><a class="nav-link" href="reservations.html">Reservations</a></li>
+          <li><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-        <main class="wrapper">
-            <div class="rental-container" id="rental-container">
-                <!-- The data here is filled with a JSON file -->
-              </div>
-        </main>
-    <footer>
+    <main id="main_rentals">
 
-
-    </footer>
-    </body>
-    <script src="js/app.js"></script>
-    </html>
+        <section id="rentals-summary">
+        <div class="town_box">
+            <h2>Rental Information</h2>
+        </div>
+    </section>
+    <div id="rentals"></div>
+    <div class="town_box">
+      <h2>Rental Conditions</h2>
+  </div>
+    <ul id="rental_conditions">
+       <li>A $50 security deposit is required to confirm reservations.</li>
+       <li>A valid drivers license is required in hand at time of rental.</li>
+       <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+       <li>Fuel charge not included.</li>
+       <li>Unlimited mileage included.</li>
+       <li>Liability insurance is free of charge.</li>
+       <li>Reservations rate requires 24 hour prior notification.</li>
+       <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+       <li>Payment is accepted via Google Pay, cash, credit card, debit card, or PayPal.</li>
+       <li>Rentals may be returned to either location.</li>
+    </ul>
+          
+     </main>
+       <div class="footer">
+        <div class="inner-footer">
+      
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div> <!--for the underline -->
+              <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="rentals.html"><li>Rentals</li></a>
+                <a href="tours.html"><li>Tours</li></a>
+                <a href="reservations.html"><li>Reservation</li></a>
+              </ul>
+          </div>
+      
+      <!--  for contact us info -->
+          <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+              <ul>
+                <li>Conzumel, MEXICO</li>
+                <li>123456789</li>
+                <li>scoots@rental.com</li>
+              </ul> 
+            
+      <!--   for social links -->
+              <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+              </div> 
+          </div>
+        </div>
+      <!--   Footer Bottom start  -->
+    </div>
+      <footer class="footer-bottom">
+        <p>&copy;2020 Isabel Aranguren</p>
+        <p class="button footer-link"><a href="attributions.html">Attributions</a></p>
+  </footer>  
+      <!--   Footer Bottom end -->
+    
+    
+             <!--   FOOTER END -->
+      <script src="js/script.js"></script>
+   </body>
+</html>
