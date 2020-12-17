@@ -1,0 +1,181 @@
+@media only screen and (min-width: 1228px) {
+    
+    .weatherInfo {
+        flex-direction: row;
+        padding: 10px;
+    }
+    .banner {
+        padding: 25px;
+    }
+
+    footer {
+        width: 100%;
+
+        font-size: .75rem;
+      }
+      footer a {
+        color: #ffffff;
+      }
+      footer h2 {
+        font-size: 1rem;
+      }
+
+
+
+    .card ul {
+        font-family: "Laila";
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .forecast {
+        font-size: .5em;
+      }
+      .forecast ul {
+        color: #000000;
+      }
+
+    h2.hero-text{
+        font-size: 64px;
+    }
+    h2{
+        font-size: 32px;
+    }
+
+    .hero-image {
+        background-image: url("/assets/explore.jpg");
+        height: 450px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      main.wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 10vh;
+      
+  }
+    
+    #rental-container {
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }  
+
+    .rental-container {
+        margin-top: 3.5em;
+      }
+      .rental-option-text li {
+        line-height: 1.5rem;
+        text-align: left;
+        padding-right: 15em;
+      }
+      .rental-summary {
+        clear: both;
+        max-width: 35%;
+      }
+      .rental-summary h2 {
+        text-align: center;
+      }
+      .rental-summary .rental-data {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+      .rental-summary img {
+        display: block;
+        width: 50%;
+        padding: 1em;
+        -webkit-transition: 1s;
+        transition: 1s;
+      }
+      .rental-summary p {
+        display: block;
+        width: 80%;
+        text-align: center;
+      }
+      }
+      .rental-sub {
+        font-size: 1em;
+        font-weight: 700;
+      }
+
+      .flex-column .button {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        font-size: 1.25em;
+      }
+    nav ul {
+        display: flex;
+    }
+    
+    .navigation {
+        max-width: 1060px;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .navigation li {
+        display: block;
+        flex: auto 1 1;
+    }
+    
+    nav a {
+        font-size: 1rem;
+    }
+    
+    nav ul li a:visited {
+        color: rgb(209, 207, 207);
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+
+
+    
+
+      main {
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+
+ /* Contact */
+ #main_contact h1 {
+    grid-column: 1 / 4;
+ }
+ #contact_intro {
+    grid-column: 2 / 4;
+ }
+ #send_message_div {
+    grid-column: 2/4;
+ }
+
+ /* Reservations */
+ #agreement {
+    grid-column: 1/4;
+ }   
+ #btnChart {
+    grid-column: 1/4;
+    width: 30%;
+    margin-left: 35%;
+ }
+ #complete_reservation_div {
+    grid-column: 1/4;
+ }
+ #chart {
+    grid-column: 1/4;
+    margin-bottom: 20px;
+  }
+  #main_contact {
+
+    width: 1076px;
+    margin-left: 2em;
+    margin-right: 2em;
+
+  }
+
+    
+}
