@@ -9,7 +9,7 @@
     }
 
     .hero-image {
-        background-image: url("/img/explore.jpg");
+        background-image: url("img/explore.jpg");
         height: 450px;
         background-position: bottom;
         background-repeat: no-repeat;
