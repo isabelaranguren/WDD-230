@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  div#alerts {
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+
+  }
+  /* Global styles */
+
+  body {
+      font-family: "Lora", serif;
+      color: rgb(41, 40, 40);
+  }
+
+  .weatherInfo {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    background-color: #c74a39;
+}
+
+div.weatherInfo > div {
+    padding: 1.5em;
+    flex: 33.33;
+    color: #fff;
+
+}
+
+div.town_box > h2 {
+    font-weight: bolder;
+    font-size: 32px;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+footer {
+    background-color: #679875;
+    padding: 10px;
+    text-align: center;
+    color:#ffff;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	background: #679875;
+	display: block;
+ }
+
+ .inner-footer {
+	 width: 95%;
+	 margin: auto;
+	 padding: 30px 10px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 box-sizing: border-box;
+	 justify-content: center;
+ }
+
+.footer-items {
+	width: 25%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.footer-items p {
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+	color: #fff;
+}
+
+.footer-items h1 {
+	color: #fff;
+}
+
+.border1 {
+	height: 3px;
+	width: 40px;
+	background: #ff9800;
+	color: #ff9800;
+	background-color: #ff9800;
+	border: 0px;
+}
+
+.footer ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;	
+ }
+
+.footer ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: #a33327
+}
+
+.footer ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+.footer li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 120%;
+	color: #fff;
+	text-align: left;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.social-media i:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #00121b;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    text-align: center;
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px rgba(63, 62, 62, 0.027);
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color:#ffff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+li {
+    color: black;
+
+}
+
+    .active{ 
+        color: #000000;
+        background-color: #679875;
+        font-weight: bold;
+    }
+    
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .ham {
+        align-content: center;
+    }
+    
+    .navigation li:first-child {
+        display: block;
+    }
+    
+    .navigation li {
+        display: none
+    }
+    
+    .navigation a {
+        display: block;
+        padding: 1rem;
+    }
+    
+    .responsive li {
+        display: block;
+    }
+    
+    /* unvisited link */
+    a:link {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: #fff;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #ccc;
+        text-decoration: none;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #fff;
+      }
+
+
+
+/* Homepage */
+
+.hero-image {
+    background-image: url("/img/explore.jpg");
+    height: 280px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+h2.hero-text {
+    font-size: 42px;
+    font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  text-shadow: 2px 2px #000;
+}
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px 35px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    border: 5px solid black;
+    margin-left: -1px;
+    margin-top: 5%;
+    font-size: 8pt;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+  }
+  
+  .hero-text button:hover {
+    background-color: transparent;
+    color: white;
+    border: 5px solid black;
+    text-shadow: 2px 2px #000;
+  }
+
+.banner {
+    margin: auto;
+    text-align: center;
+    padding: 5.5px;
+    line-height: 0.9rem;
+    background-color: #a33327;
+}
+
+
+/* Still homepage but now gallery */
+
+
+.gallery {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+  
+  .gallery figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery img {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .gallery figcaption {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.054);
+    padding-bottom: 10px;
+    color: white;
+    background-color: #a33327;
+    font-size: 1em;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+
+
+/* BEGIN Weather three-day forecast */
+
+section#weather, section#rentals-summary {
+    background-color: #ffffff;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-right: 5em ;
+    margin-left: 5em ;
+
+}
+
+
+.forecast {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 28vw;
+  }
+  
+  .forecast img {
+    max-width: 50px;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+  
+  .forecast ul {
+    list-style: none;
+
+    padding-top: 0;
+  }
+  
+  .forecast li {
+    padding: 5px 0;
+  }
+  
+  .forecast-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 126px;
+    min-width: 100%;
+  }
+
+  .card ul {
+    
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .card {
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    border-radius: .5em;
+  }
+  
+  .card ul {
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+/* END  */
+
+
+
+/* END Homepage */
+
+/* Begins btn */
+
+.button2, .button3 {
+    text-align: center;
+    margin-bottom: 4em;
+
+    outline: 0;
+    display: inline-block;
+    padding: 12px 35px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    border: 5px solid black;
+    margin-left: -1px;
+    margin-top: 5%;
+    font-size: 8pt;
+    
+}
+  .button3 {
+    width: 90%;
+    margin-top:20px;
+  }
+  .center {
+    text-align: center;
+  }
+
+  /* Begin rentals */
+  #rentals {
+    margin-left: 2em;
+    margin-right: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #rentals img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #rentals .txt_div {
+    width: 50%;
+    float:left;  
+    font-size: .9em;
+    padding:8px;
+    box-sizing: border-box;
+  }
+
+  #rental_conditions {
+      margin-left: 10em;
+      margin-right: 10em;
+  }
+
+  /* Reservations */
+#btnChart {
+  margin-left: 20%;
+  margin-bottom: 25px;
+}
+#chart {
+  display: none;
+  font-size: .8em;
+  margin-bottom:20px;
+}
+
+#main_reservations label {
+  display: inline-block;
+  width:120px;
+}
+
