@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1228px) {
+@media only screen and (min-width: 1200px) {
     
     .weatherInfo {
         flex-direction: row;
@@ -9,7 +9,7 @@
     }
 
     .hero-image {
-        background-image: url("img/explore.jpg");
+        background-image: url("/img/explore.jpg");
         height: 450px;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -24,9 +24,20 @@
       
   }
 
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  
 
+
+ 
   /* For Gallery */
-  img[data-src] {
+  img[data-src], img[data-embed] {
     filter: blur(0.5em);
     -webkit-filter: blur(0.5em);
 }
@@ -131,6 +142,8 @@ main{
     margin-bottom: 20px;
   }
 
+
+  
 }
 
 

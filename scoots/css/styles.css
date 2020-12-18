@@ -1,9 +1,11 @@
 /* for tablet mode view */
 
-@media screen and (max-width: 1275px) {
+@media screen and (min-width: 600px) {
 	.footer-items {
 		width: 50%;
 	}
+
+	
 
 	#agreement {
 		grid-column: 1/4;

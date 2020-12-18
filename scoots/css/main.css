@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;0,600;0,700;1,100;1,300;1,400&display=swap');
 
 
 * {
@@ -18,8 +18,16 @@
   }
   /* Global styles */
 
+  div.social-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  div.social-wrapper > div {
+  flex-direction: column;
+
+}
   body {
-      font-family: "Lora", serif;
+      font-family: "Jost", serif;
       color: rgb(41, 40, 40);
   }
 
@@ -411,7 +419,6 @@ section#weather, section#rentals-summary {
 .button2, .button3 {
     text-align: center;
     margin-bottom: 4em;
-
     outline: 0;
     display: inline-block;
     padding: 12px 35px;
@@ -477,3 +484,84 @@ section#weather, section#rentals-summary {
   width:120px;
 }
 
+/* COntact */
+
+ /* Create two equal columns that floats next to each other */
+
+ .grid_items {
+  padding: 3.75%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 20px;
+}
+.grid_items > div {
+  padding: 10px;
+}
+
+
+form {
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+form legend {
+  padding: 0 1em;
+}
+
+form label {
+  display: block;
+  padding: 0.5em;
+}
+
+form input,
+form select,
+form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 96%;
+  padding: 0.5em;
+  border: solid 1px rgb(201, 201, 201);
+}
+
+form input:required:invalid,
+form select:required:invalid {
+  border-left: 0.5em solid red;
+}
+
+form input:required:valid,
+form select:required:valid {
+  border-left: 0.5em solid green;
+}
+
+form .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0.5em 0;
+}
+
+form .submit {
+  border: none;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  border: 5px solid black;
+  margin-left: -1px;
+  margin-top: 5%;
+  font-size: 8pt;
+  width: 100%;
+  padding: 0.5em;
+  cursor: pointer;
+  -webkit-transition: .45s;
+  transition: .45s;
+}
+
+form .submit:hover {
+  background-color: #000000;
+  color: #c74a39;
+}
