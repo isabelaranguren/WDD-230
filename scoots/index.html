@@ -13,9 +13,13 @@
       <title>Scoots | Contact </title>
    </head>
    <body onload="main()">
-      <div id="banner" class="banner">
-         <div id="alerts">SCOOTS</div>
-     </div>
+    <header>
+    <picture>
+      <source media="(max-width: 500px)" srcset="/img/SCOOTS.png">
+      <source media="(max-width: 1000px)" srcset="/img/SCOOTS.png">
+      <img class="logo" src="img/SCOOTS.png" alt="Scoots Logo">
+  </picture> 
+</header> 
       <div class="weatherInfo">
          <div id="temp"></div>
          <div id="current"></div>
@@ -44,13 +48,12 @@
           </div>
        </section>
        <section id="weather">
-       <div class="forecast-container" id="threeDay">
+       <div class="forecast-container" id="threeDay"></div>
        </section>
        <section id="rentals-summary">
         <div class="town_box">
             <h2>Type of rentals</h2>
-        </div>
-          
+        </div>     
         <div class="gallery">
             <figure>
                 <img src='img/placeholder2.png' data-src='img/jeep2door_small.jpg' alt='Jeep 2 Door Small'>
@@ -79,6 +82,7 @@
         </div>    
 
        </section>
+       </main>
        <div class="footer">
         <div class="inner-footer">
       <!--  for quick links  -->
