@@ -499,10 +499,28 @@ section#weather, section#rentals-summary {
   padding: 10px;
 }
 
+/* Form styles */
 
 form {
-  padding-bottom: 1em;
+    padding-bottom: 2.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+form fieldset {
+  border: solid 1px rgb(201, 201, 201);
+
+  margin: 1.5em 0;
+}
+
+form .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0.5em 0;
 }
 
 form legend {
@@ -553,7 +571,7 @@ form .submit {
   border: 5px solid black;
   margin-left: -1px;
   margin-top: 5%;
-  font-size: 8pt;
+  font-size: 18pt;
   width: 100%;
   padding: 0.5em;
   cursor: pointer;
@@ -564,4 +582,11 @@ form .submit {
 form .submit:hover {
   background-color: #000000;
   color: #c74a39;
+}
+
+.rental-agreement ul {
+  line-height: 35px;
+  list-style: none;
+  padding: 1em;
+  margin: 0;
 }

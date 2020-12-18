@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -9,9 +8,8 @@
       <link rel="stylesheet" href="css/large.css">
       <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="shortcut icon" href="assets/favicon.ico">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-      <title>Scoots | Home </title>
+      <title>Scoots | Contact </title>
    </head>
    <body onload="main()">
       <div id="banner" class="banner">
@@ -21,6 +19,11 @@
          <div id="temp"></div>
          <div id="current"></div>
          <div id="humidity"></div>
+         <div class="social-wrapper">
+            <div class="media"><a href="wwww.instagram.com"><i class="fab fa-instagram"></i></a></div>
+            <div class="media"><a href="wwww.facebook.com"><i class="fab fa-facebook"></i></a></div>
+            <div class="media"><a href="wwww.twitter.com"><i class="fab fa-twitter"></i></a></div>
+         </div>
       </div>
     <nav>
         <ul class="navigation">
@@ -32,112 +35,145 @@
           <li><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <main id="main_reservations">
-    <form method="POST" action="confirmation.html">
-       <button id="btnChart" type="button" class="button2" onclick="showChart()">View Pricing Chart</button>
-       <div id="chart"></div>
-       <div class="form-group">
-          <label for="date">Rental Date</label>
-          <input id="date" type="date" class="input-control" />
-       </div>
-      
-       <div class="form-group">   
-          <label for="numdays">Duration</label>
-          <select id="numdays" class="input-control">
-             <option>Half Day</option>
-             <option>1 Day</option>
-             <option>2 Days</option>
-             <option>3 Days</option>
-             <option>4 Days</option>
-             <option>5 Days</option>
-             <option>6 Days</option>
-             <option>1 Week</option>
-          </select>
+    <main id="main-reservation">
+        <section id="rentals-summary">
+        <div class="town_box">
+            <h2 class="page-title">Reserve a vehicle</h2>
         </div>
-        <div class="form-group">
-          <label for="rental_type">Rental Type</label>
-          <select id="rental_type" class="input-control"></select>
-       </div>
-       <div class="form-group">
-          <label for="first_name">First Name</label>
-          <input type="text" id="first_name" class="input-control" />
-       </div>
-      
-       <div class="form-group">
-          <label for="last_name" class="right-inline">Last Name</label>
-          <input id="last_name" type="text" class="input-control" />
-        </div>
-      
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" type="text" class="input-control" />
-        </div>
-        <div class="form-group">
-          <label for="phone_number" class="right-inline">Phone Number</label>
-          <input id="phone_number" type="text" class="input-control" />
-        </div>       
- 
-        <div class="form-group">
-          <label for="state_province">State/Province</label>
-          <input id="state_province" type="text" class="input-control" />
-        </div>
-        <div class="form-group">
-          <label for="country" class="right-inline">Country</label>
-          <input id="country" type="text" class="input-control" />
-        </div>       
- 
-        <div class="form-group">
-          <label for="cruise_line">Cruise Line</label>
-          <input id="cruise_line" type="text" class="input-control" />
-        </div>
-        <div class="form-group">
-          <label for="comments">Comments</label>
-          <input id="comments" type="text" class="input-control" />
-        </div>
-        <script src="js/script.js"></script>
-        <div class="footer">
-            <div class="inner-footer">
-          
-          <!--  for quick links  -->
-              <div class="footer-items">
-                <h3>Quick Links</h3>
-                <div class="border1"></div> <!--for the underline -->
-                  <ul>
-                    <a href="index.html"><li>Home</li></a>
-                    <a href="rentals.html"><li>Rentals</li></a>
-                    <a href="tours.html"><li>Tours</li></a>
-                    <a href="reservations.html"><li>Reservation</li></a>
-                  </ul>
-              </div>
-          
-          <!--  for contact us info -->
-              <div class="footer-items">
-                <h3>Contact us</h3>
-                <div class="border1"></div>
-                  <ul>
-                    <li>Conzumel, MEXICO</li>
-                    <li>123456789</li>
-                    <li>scoots@rental.com</li>
-                  </ul> 
-                
-          <!--   for social links -->
-                  <div class="social-media">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-square"></i></a>
-                  </div> 
-              </div>
-            </div>
-          <!--   Footer Bottom start  -->
-        </div>
-          <footer class="footer-bottom">
-            <p>&copy;2020 Isabel Aranguren</p>
-            <p class="button footer-link"><a href="attributions.html">Attributions</a></p>
-      </footer>  
-          <!--   Footer Bottom end -->
-        
-        
-                 <!--   FOOTER END -->
-    </body>
+            <form action="confirmation.html" method="GET">
+    
+              <fieldset>
+                <legend>Guest Information</legend>
+                <label for="fName">First Name:
+                  <input type="text" name="fName" id="fName" pattern="[A-Za-z]{3,}" required>
+                </label>
+                <label for="lName">Last Name:
+                  <input type="text" name="lName" id="lName" pattern="[A-Za-z]{2,}" required>
+                </label>
+                <label for="country">Coutry of residence:
+                  <input type="text" name="country" id="country" required>
+                </label>
+                <label for="email">Email:
+                  <input type="email" name="email" id="email" required>
+                </label>
+                <label for="phone">Phone Number:
+                  <input type="tel" name="phone" id="phone" placeholder="Example: 1234567890" required>
+                </label>
+                <label for="cruise">Cruise line:
+                  <input type="text" name="cruise" id="cruise" placeholder="Input cruise line (optional)">
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Rental Information</legend>
+                <label for="rStart">Beggining rental date:
+                  <input type="date" name="rStart" id="rStart" required>
+                </label>
+                <label for="rEnd">Ending rental date:
+                  <input type="date" name="rEnd" id="rEnd" required>
+                </label>
+                <label for="totalPassengers">Number of passengers:
+                <input type="number" max="12" name="totalPassengers" id="totalPassengers" placeholder="Maximum 12" required>
+              </label>
+                <div class="radio-container">
+                  <p>Rental type:</p>
+                  <label for="rentalF">
+                    <input type="radio" name="rental" id="rentalF" value="Full-day">Full-day
+                  </label>
+                  <label for="rentalH">
+                    <input type="radio" name="rental" id="rentalH" value="Half-day">Half-day
+                  </label>
+                </div>
+                <label for="vehicleType">Type of Vehicle(s):</label>
+                <select name="vehicleType" id="vehicleType" required>
+                  <option value="">Choose a vehicle type:</option>
+                </select>
+                <label for="vehicleAmount">Amount of vehicles to reserve:</label>
+                <select name="vehicleAmount" id="vehicleAmount" required>
+                  <option value="">Choose the amount of vehicles:</option>
+                  <option value="1">1 vehicle</option>
+                  <option value="2">2 vehicles</option>
+                  <option value="3">3 vehicles</option>
+                  <option value="4">4 vehicles</option>
+                  <option value="4">4 vehicles</option>
+                  <option value="5">5 vehicles</option>
+                </select>
+                <div class="radio-container">
+                  <p>Would you like your vehicle dropped off somewhere?</p>
+                  <label for="dropoffY">
+                    <input type="radio" name="dropoff" id="dropoffY" value="Yes">Yes
+                  </label>
+                  <label for="dropoffN">
+                    <input type="radio" name="dropoff" id="dropoffN" value="No">No
+                  </label>
+                </div>
+                <label for="dropLoc">If yes, specify dropoff location.
+                  <input type="text" name="dropLoc" id="dropLoc">
+                </label>
+                <label for="rentalComments">Extra information:
+                </label>
+                <textarea name="rentalComments" id="rentalComments" cols="30" rows="10"
+                  placeholder="Please leave any comments or extra information here:"></textarea>
+              </fieldset>
 
- </html>
+              <fieldset class="rental-agreement">
+                <legend>Information and Services                </legend>
+                <ul>
+                  <li class="rental-sub"></li>
+                  <li>A $50 security deposit is required to confirm reservations.</li>
+                  <li>A valid drivers license is required in hand at time of rental.</li>
+                  <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                  <li>Fuel charge not included.</li>
+                  <li>Unlimited mileage.</li>
+                  <li>Liability insurance is free of charge.</li>
+                  <li>Reservations rate requires 24 hour prior notification.</li>
+                  <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                  <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                  <li>Rentals may be returned to either location.</li>
+                  <li class="agreement"><label for="rentalAgreement">I have read and agree with the rental agreement above.
+                    <input type="checkbox" name="rentalAgreement" id="rentalAgreement" required></label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="submit">Reserve Now</button>
+
+            </form>
+          </main>
+       <div class="footer">
+        <div class="inner-footer">
+      <!--  for quick links  -->
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div> <!--for the underline -->
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+              </ul>
+          </div>
+      <!--  for contact us info -->
+          <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+              <ul>
+                <li>Conzumel, MEXICO</li>
+                <li>123456789</li>
+                <li>scoots@rental.com</li>
+              </ul> 
+      <!--   for social links -->
+              <div class="social-media">
+                <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="wwww.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="wwww.twitter.com"><i class="fab fa-twitter"></i></a>
+              </div> 
+          </div>
+        </div>
+    </div>
+      <!--   Footer Bottom start  -->
+      <footer class="footer-bottom">
+        <p>&copy;2020 Isabel Aranguren</p>
+        <p class="button footer-link"><a href="attributions.html">Attributions</a></p>
+    </footer>  
+      <script src="js/script.js"></script>
+   </body>
+</html>
