@@ -590,3 +590,10 @@ form .submit:hover {
   padding: 1em;
   margin: 0;
 }
+
+.logo {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
