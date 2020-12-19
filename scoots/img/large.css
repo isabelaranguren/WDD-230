@@ -1,0 +1,173 @@
+@media only screen and (min-width: 1200px) {
+    
+    .weatherInfo {
+        flex-direction: row;
+        padding: 10px;
+    }
+    .banner {
+        padding: 25px;
+    }
+
+    .hero-image {
+        background-image: url("/img/explore.jpg");
+        height: 450px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      main.wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 10vh;
+      
+  }
+
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  
+
+
+
+ 
+  /* For Gallery */
+  img[data-src], img[data-embed] {
+    filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+}
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    -webkit-transition: filter 1.5s;
+    -moz-transition: filter 1.5s;
+    -ms-transition: filter 1.5s;
+    -o-transition: filter 1.5s;
+    -webkit-filter: blur(0em);
+}
+
+.gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.tour {
+    grid-template-columns: 1fr 1fr;
+}
+
+  .gallery img:hover {
+      box-shadow: 0 0 20px rgb(141, 141, 141);
+
+}
+
+
+
+  .navigation {
+    max-width: 1060px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navigation li {
+    display: block;
+    flex: auto 1 1;
+}
+
+nav a {
+    font-size: 1rem;
+}
+
+nav ul li a:visited {
+    color: rgb(209, 207, 207);
+}
+
+.navigation li:first-child {
+    display: none;
+}
+
+main{
+    margin-bottom: 4em;
+}
+
+#rentals h3 {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+   /* Rentals */
+#main_rentals h2 {
+    grid-column: 1/4;
+ }
+
+
+
+#rentals .rental_image {
+    margin-bottom: 2em;
+}
+ #rentals {
+    margin-left: 10em;
+    margin-right: 10em;
+    grid-column: 1 / 4;
+    gap: 45px;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ #rental_conditions {
+    grid-column: 1/4;
+ }   
+
+
+#alerts {
+    font-size: 3em;
+}
+/* Reservations */
+
+#main_reservations {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+   #agreement {
+    grid-column: 1/4;
+ }   
+ #btnChart {
+    grid-column: 1/4;
+    width: 30%;
+    margin-left: 35%;
+ }
+ #complete_reservation_div {
+    grid-column: 1/4;
+ }
+
+ /* form begins */
+ #main_reservation main {
+     margin-left: 12em;
+     margin-right: 12em;
+ };
+
+
+ .agreement {
+    text-align: center;
+  }
+  .rental-option-text li {
+    color: #000000;
+  }
+  .rental-sub {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  #main_tours {
+      padding-bottom: 2em;
+      margin-left: 10em;
+      margin-right: 10em;
+
+  }
+
+}
+
+
