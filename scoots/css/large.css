@@ -10,6 +10,7 @@
 
     .hero-image {
         background-image: url("/img/explore.jpg");
+        background-color: brown;
         height: 450px;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -32,10 +33,6 @@
   .grid_items > div {
     padding: 10px;
   }
-  
-
-
-
  
   /* For Gallery */
   img[data-src], img[data-embed] {
@@ -57,12 +54,13 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .gallery img:hover {
-      box-shadow: 0 0 20px rgb(141, 141, 141);
-
+.tour {
+    grid-template-columns: 1fr 1fr;
 }
 
-
+  .gallery img:hover {
+      box-shadow: 0 0 20px rgb(141, 141, 141);
+}
 
   .navigation {
     max-width: 1060px;
@@ -144,8 +142,6 @@ main{
      margin-left: 12em;
      margin-right: 12em;
  }
-
-
  .agreement {
     text-align: center;
   }
@@ -156,6 +152,14 @@ main{
     font-size: 1em;
     font-weight: 700;
   }
+
+  #main_tours {
+      padding-bottom: 2em;
+      margin-left: 10em;
+      margin-right: 10em;
+
+  }
+
 }
 
 
