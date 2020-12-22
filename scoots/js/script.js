@@ -175,6 +175,18 @@ function initMap() {
        });
     }
  }
+
+fetch("data/types.json")
+  .then(response => response.json())
+  .then(rentals => {
+    for (let i = 0; i < rentals.prices.length; i++) {
+      option = document.createElement("option");
+      option.setAttribute("value", rentals.prices[i].rental_type);
+      option.textContent = rentals.prices[i].rental_type;
+
+      document.getElementById('vehicleType').appendChild(option);
+    }
+  });
  
  function loadRentalTypes() {
     if (data === undefined) {
