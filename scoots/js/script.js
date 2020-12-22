@@ -3,7 +3,6 @@ var data;
 function main() {
     getWeather();
     loadData();
-    buildChart() 
     buildRates()
     buildRentals()
     loadRentalTypes();
@@ -124,26 +123,7 @@ function initMap() {
        data = jsonObject;
     });
  }
- 
- function buildChart() {
-    if (data === undefined) {
-       setTimeout(buildChart, 200);
-    } else {
-       let table = '<table id="priceChart">';
-       table += '<caption>Max Persons and Price Chart <span class="smaller">(includes Tax)</span></caption>';
-       table += '<tr><th colspan="2">&nbsp;</th><th colspan="2">Reservation</th><th colspan="2">Walk-In</th></tr>';
-       table += '<tr><th>Rental Type</th><th>Max Persons</th><th>Half Day<br>(3 hrs)</th><th>Full Day</th><th>Half Day<br>(3 hrs)</th><th>Full Day</th></tr>';
-       data.types.forEach(type => {
-          type.rentals.forEach(rental => {
-             table += '<tr><td>' + rental.rental_type + '</td><td>' + rental.max_persons + '</td><td>$' + rental.pricing.reservation.half_day;
-             table += '</td><td>$' + rental.pricing.reservation.full_day + '</td><td>$' + rental.pricing.walk_in.half_day;
-             table += '</td><td>$' + rental.pricing.walk_in.full_day + '</td></tr>'
-          })
-       });
-       table += '</table>';
-       document.getElementById('chart').innerHTML = table;
-    }
- }
+
  
  function buildRates() {
        if (data === undefined) {
@@ -213,20 +193,3 @@ function initMap() {
        });
     }
  }
-
-d = new Date
-document.getElementById('rStart').min = `${d.getMonth()+1}-${d.getDate()}-${d.getFullYear()}`;
-
-document.getElementById('rEnd').min = `${d.getMonth()+1}-${d.getDate()+1}-${d.getFullYear()}`;
-
-fetch("data/types.json")
-  .then(response => response.json())
-  .then(rentals => {
-    for (let i = 0; i < rentals.prices.length; i++) {
-      option = document.createElement("option");
-      option.setAttribute("value", rentals.prices[i].rental_type);
-      option.textContent = rentals.prices[i].rental_type;
-
-      document.getElementById('vehicleType').appendChild(option);
-    }
-  });
