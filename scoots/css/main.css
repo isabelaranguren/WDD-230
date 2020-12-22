@@ -197,7 +197,7 @@ li {
 }
 
     .active{ 
-        color: #000000;
+        color: black;
         background-color: #679875;
         font-weight: bold;
     }
