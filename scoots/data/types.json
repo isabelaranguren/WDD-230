@@ -112,16 +112,15 @@
           ]
        }
     ],
-    "information": [
-       "A $50 security deposit is required to confirm reservations.",
-       "A valid drivers license is required in hand at time of rental.",
-       "No one under 12 years of ag are allowed to ride on the scooters",
-       "Fuel charge not included.",
-       "Unlimited mileage.",
-       "Liability insurance is free of charge.",
-       "Reservations rate requires 24 hour prior notification.",
-       "Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.",
-       "Payment via Google Pay, cash, credit card, debit card, or PayPal",
-       "Rentals may be returned to either location."
-    ]   
- }
+    
+    "rental_types": [{
+      "honda": ["Honda Metropolitan (49cc) - 1 person",
+        "Honda Dio (110cc) - 2 person",
+        "Honda PCX150 (149cc) - 2 person"
+      ],
+      "atv_sbs": ["Honda Pioneer 1000"],
+      "jeep": ["4-door Jeep Wrangler - manual with A/C - 5 people max",
+        "2-door Jeep Wrangler - open air - manual - 4 people max"
+      ]
+    }]
+  }
