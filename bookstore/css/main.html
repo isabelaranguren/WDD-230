@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,200&display=swap");
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+
+:root {
+  --body-bg-color: #e5f4f9;
+  --body-color-light: #8b939c;
+  --body-font: "Source Sans Pro", sans-serif;
+  --page-bg-color: #f2f5f7;
+  --body-color: #3d4954;
+  --border-color: #b8bec3;
+  --placeholder: #ccd0d2;
+}
+
+.navbar-expand-sm {
+  height: 50px;
+  background-color: #C8DAE2;
+  border: none;
+}
+
+.checked {
+  color: gold;
+}
+
+.spacer {
+  padding-top: 1em;
+}
+
+h4 {
+  font-size: 14px;
+  color: #8b939c;
+  font-weight: 200;
+}
+
+.cen
+
+.logo {
+  max-width: 35%;
+  display: inline-block; 
+  margin-top: 20px;
+}
+
+.colored {
+ background-color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #fbc531;
+}
+
+.navbar .navbar-nav .active > .nav-link { color: #fbc531;
+}
+
+/* Arama */
+.search-btn { background-color: #fff; }
+.search-btn:hover { background-color: #ffc107; }
+
+
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #536878;
+}
+
+/* phone or baseline views **************************/
+header,
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav {
+  border-bottom: 0.5px solid #bbb;
+}
+
+hr {
+  padding: 0.5px solid #bbb;
+}
+
+.btn .btn-primary button important {
+  color: #536878;
+
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 1067px;
+  margin: 0 auto;
+}
+
+footer {
+  position: relative;
+  background-color: #d9dfe4;
+	flex: 0 1 100%;
+	height: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li a  {
+  color: #6e6c6c;
+  display: block;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+main {
+  font-size: 0.8rem;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.form-container {
+  padding-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.car {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #536878;
+  text-align: center;
+  border-left: 1px solid #6e6c6c;
+}
+
+@media only screen and (min-width: 37.5em) {
+
+  /* Flex *********************/
+  nav ul {
+    display: flex;
+  }
+
+ 
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  /* Inline-Block             */
+  nav li {
+    display: inline-block;
+  }
+
+  nav li {
+    float: left;
+    margin-right: 15px;
+  }
+
+  main {
+    clear: both;
+  }
+
+  /*******************************************************/
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.top-bar {
+    max-width: 1067px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    padding-bottom: 5px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .search-container input[type=text]{
+    width: 700px;
+
+
+  }
+
+  .topnav .search-container {
+    float: right;
+  }
+  
+  .topnav input[type=text] {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #cdcdcd;
+  }
+  
+  .topnav .search-container {
+    align-content: center; }
+  
+  
+  .topnav .search-container button {
+    color: #3d4954;
+    float: right;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 26px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button {
+    background: #ccc;
+    font-size: 14px;
+
+  }
+
+ 
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  
+  .topnav .right {
+  float: right;
+  }
+
+
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+
+
+
+
+  input[type=text], input[type=password], input[type=submit] {
+    padding: 12px 20px;
+  
+  }
+
+  .form-container {
+    margin: 0 auto;
+    display: flex;
+  flex-flow: column;
+    max-width: 640px;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+      display: block;
+  }
+  
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+  }
+  
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+  
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+  
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+
+}
+
+}
